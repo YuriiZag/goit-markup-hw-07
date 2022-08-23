@@ -1,0 +1,23 @@
+.logo{
+
+    font-family: Raleway, sans-serif;
+    color: $primary-accent-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    &-part{
+        color: $black-color;
+    }
+    &-part--inverse{
+        color: $primary-white-color;
+    }
+}
+.header__logo{
+    margin-right: 93px;
+}   
+.footer__logo{
+    margin-bottom: 30px; 
+    display: inline-block;
+}

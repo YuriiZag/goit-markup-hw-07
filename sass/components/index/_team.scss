@@ -1,0 +1,55 @@
+.team-section {
+    background-color: $secondary-white-color;
+    padding-top: 95px;
+    padding-bottom: 95px;
+
+    &__heading{
+        @extend %section-heading;
+    }
+}
+.team-list{
+    display: flex;
+    gap: 30px;
+
+    &__item{
+        background-color: $primary-white-color;
+
+        box-shadow:     0px 1px 3px rgba(0, 0, 0, 0.12), 
+                        0px 1px 1px rgba(0, 0, 0, 0.14), 
+                        0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__text-container {
+        padding: 30px 32px;
+    }
+    &__teamate{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+    
+        margin: 0 0 10px 0;
+    }
+    &__teammate-position {
+        color: var(--secondary-text-color);
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+    
+        margin: 0 0 16px 0;
+    
+    }
+}
+.team-networks{
+    fill: $primary-icon-color;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__icon{
+        
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover, &:focus{
+    background-color: $primary-accent-color;
+    fill: $primary-white-color;
+    }
+}

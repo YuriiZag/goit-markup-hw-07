@@ -10,41 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link  rel="stylesheet" href="./css/style.css"/>
+    <link  rel="stylesheet" href="./css/main.min.css"/>
 </head>
 
 <body>
     <!-- шапка -->
     <header class="header">
-        <div class="container">
+        <div class="header__container container">
             <nav class="site-nav">
-                <a href="./index.html" class="site-nav__logo">
-                    WebS<span class="site-nav__logo-part" lang="en">tudio</span>
+                <a href="./index.html" class="header__logo logo">
+                    WebS<span class="logo-part" lang="en">tudio</span>
                 </a>
                 <ul class="nav-list">
-                    <li class="nav-list__list-item">
-                        <a href="./index.html" class="nav-list__nav-link nav-list__nav-link--current">Студія</a>
+                    <li class="nav-list__item">
+                        <a href="./index.html" class="nav-list__link nav-list__link--currant">Студія</a>
                     </li>
-                    <li>
-                        <a href="./portfolio.html" class="nav-list__nav-link ">Портфоліо</a>
+                    <li class="nav-list__item">
+                        <a href="./portfolio.html" class="nav-list__link ">Портфоліо</a>
                     </li>
-                    <li>
-                        <a href="#" class="nav-list__nav-link">Контакти</a>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <ul class="nav-contacts">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="nav-contacts__link-contact">
-                        <svg class="nav-contacts__contact-icon nav-contacts__contact-icon--envelope">
+                <li class="nav-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="nav-contacts__link">
+                        <svg class="nav-contacts__icon nav-contacts__contact-icon--envelope">
                             <use href="./image/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li>
-                    <a href="tel:380961111111" class="nav-contacts__link-contact">
-                        <svg class="nav-contacts__link-contact nav-contacts__link-contact:vector">
+                <li class="nav-contacts__item">
+                    <a href="tel:380961111111" class="nav-contacts__link">
+                        <svg class="nav-contacts__icon nav-contacts__contact-icon--vector">
                             <use href="./image/icons.svg#icon-Vector"></use>
                         </svg>
                         +38 096 111 11 11
@@ -57,7 +57,7 @@
         <section class="works-section">
             <div class="container">
                 <!-- невидимий заголовок visually-hidden-->
-                <h1 class="works-section__heading ">Роботи</h1>
+                <h1 class="works-section__heading visually-hidden">Роботи</h1>
                 <ul class="works-filters">
                     <li class="works-filters__list-item">
                         <button type="button" class="works-filters__filter">Усі</button>
@@ -219,16 +219,16 @@
     </main>
     <!-- нижній колнтитул -->
     <footer>
-        <div class="container footer">
+        <div class="footer__container container ">
             <div class="address-container">
-                <a href="./index.html" class="footer__logo-link"><span class="footer__logo" lang="en">Web<span
-                            class="footer__logo-part--inverse" lang="en">Studio</span></a>
+                <a href="./index.html" class="footer__logo logo ">Web<span class="logo-part--inverse"
+                        lang="en">Studio</span></a>
                 <address>
                     <ul class="address-list">
                         <li class="address-list__item">
-                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                rel="noopener noreferrer nofollow" class="address-list__address-link">
-                                <span class="phis-address">м. Київ, пр-т Лесі Українки, 26</span>
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                                class="address-list__address-link">
+                                м. Київ, пр-т Лесі Українки, 26
                             </a>
                         </li>
                         <li class="address-list__item">
@@ -244,28 +244,28 @@
                 <p class="social-link-label">Приєднуйтесь</p>
                 <ul class="social-networks">
                     <li class="social-networks__item">
-                        <a href="#" class="social-networks__link">
+                        <a href="#" class="social-networks__link footer-networks">
                             <svg class="social-networks__icon">
                                 <use href="./image/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-networks__item">
-                        <a href="#" class="social-networks__link">
+                        <a href="#" class="social-networks__link footer-networks">
                             <svg class="social-networks__icon">
                                 <use href="./image/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-networks__item">
-                        <a href="#" class="social-networks__link">
+                        <a href="#" class="social-networks__link footer-networks">
                             <svg class="social-networks__icon">
                                 <use href="./image/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-networks__item">
-                        <a href="#" class="social-networks__link">
+                        <a href="#" class="social-networks__link footer-networks">
                             <svg class="social-networks__icon">
                                 <use href="./image/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -274,16 +274,16 @@
                 </ul>
             </div>
             <div class="footer-form">
-                <p class="form-form__label">Підпишіться на розсилку</p>
+                <p class="footer-form__label">Підпишіться на розсилку</p>
                 <form class="footer-form__body">
-                    <input type="email" name="email" id="email" placeholder="E-mail" class="footer-form__imput-field">
-                    <button type="submit" class="footer-form__submit-button">
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="footer-form__input">
+                    <button type="submit" class="footer-form__submit-button button">
                         Підписатись
                         <svg class="footer-form__button-icon">
                             <use href="./image/icons.svg#icon-send"></use>
                         </svg>
                     </button>
-    
+        
                 </form>
             </div>
         </div>

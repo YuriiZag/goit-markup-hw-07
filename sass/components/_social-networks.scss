@@ -1,0 +1,31 @@
+.social-networks {
+    display: flex;
+    gap: 10px;
+
+    &__item {
+        display: block;
+        border-radius: 50%;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $primary-accent-color;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

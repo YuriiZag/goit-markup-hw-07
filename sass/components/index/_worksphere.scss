@@ -1,0 +1,40 @@
+.worksphere-section {
+    padding-bottom: 95px;
+
+    &__heading {
+        @extend %section-heading;
+    }
+}
+.worksphere-list{
+    
+    display: flex;
+    gap: 30px;
+    
+    &__thumb{
+        position: relative;
+        
+        width: 100%;
+        height: 100%;
+    }  
+    &__overlay-heading{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    
+        width: 100%;
+        height: 70px;
+    
+        background: rgba(47, 48, 58, 0.8);
+    }
+    &__overlay-heading{
+        margin: 0;
+            
+        text-align: center;
+        color: $primary-white-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.14;
+    }
+}

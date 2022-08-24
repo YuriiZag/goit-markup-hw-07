@@ -1,0 +1,15 @@
+header{
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+}
+.header__container{
+    display: flex;
+}
+.site-nav, .nav-list,
+.nav-contacts{
+    display: flex;
+    align-items: center;
+}

@@ -17,8 +17,18 @@
 @import "./components/index/worksphere";
 @import "./components/index/team";
 @import "./components/index/clients";
-@import "./components/index/modal";
+// Portfolio
+@import "./components/portfolio/filters";
+@import "./components/portfolio/works-grid";
+// Modal
+@import "./components/modal/modal";
+@import "./components/modal/modal-form";
 
 // Layouts
-@import "./layouts/header";
-@import "./layouts/footer";
+// Header
+@import "./layouts/header/header";
+@import "./layouts/header/nav-list";
+@import "./layouts/header/nav-contacts";
+// Footer
+@import "./layouts/footer/footer";
+@import "./layouts/footer/footer-form";

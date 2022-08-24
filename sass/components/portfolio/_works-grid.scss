@@ -1,0 +1,71 @@
+.works-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__item{
+        background-color: $primary-white-color;
+        outline: 1px solid $scondary-border-color;
+        
+        display: inline-block;
+    }
+    &__item {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                    0px 4px 4px rgba(0, 0, 0, 0.06),
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__work {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+        color: $secondary-text-color;
+    }
+    &__text-container{
+        padding: 20px 24px;
+    }
+    &__name{
+        color: $primary-text-color;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    
+        margin: 0 0 4px 0;
+    }
+    &__filter{
+        
+        font-size: 16px;
+        line-height: 1.88;
+    
+        margin: 0;
+    }
+    &__thumb{
+        overflow: hidden;
+        position: relative;
+    
+        width: 100%;
+    }
+    &__overlay-paragraph {
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        padding: 63px 24px;
+    
+        transform: translateY(100%);
+    
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+    
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__work:hover &__overlay-paragraph, &__work:focus &__overlay-paragraph{
+        position: absolute;
+        top: 0;
+        transform: translateY(0);
+    }
+    &__meta{
+        color: $primary-white-color;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

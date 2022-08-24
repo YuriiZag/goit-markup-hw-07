@@ -393,7 +393,6 @@ ul {
 }
 .works-list__work:hover .works-list__overlay-paragraph, .works-list__work:focus .works-list__overlay-paragraph {
   position: absolute;
-  top: 0;
   transform: translateY(0);
 }
 .works-list__meta {

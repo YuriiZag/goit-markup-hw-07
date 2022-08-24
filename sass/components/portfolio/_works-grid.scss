@@ -39,11 +39,12 @@
     &__thumb{
         overflow: hidden;
         position: relative;
-    
+        
         width: 100%;
     }
     &__overlay-paragraph {
         position: absolute;
+        
         top: 0;
         left: 0;
     
@@ -59,7 +60,6 @@
     }
     &__work:hover &__overlay-paragraph, &__work:focus &__overlay-paragraph{
         position: absolute;
-        top: 0;
         transform: translateY(0);
     }
     &__meta{
